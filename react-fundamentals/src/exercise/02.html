@@ -20,9 +20,12 @@
     // 🐨 Please re-implement the regular document.createElement code above
     // with these React API calls
     // 💰 The example in the markdown file should be a good hint for you.
-    let reactElement = React.createElement('div', { children: 'Hello World', })
-    ReactDOM.render(reactElement, rootElement)
+    const reactElement = React.createElement('div', { children: 'Hello World', })
+   // ReactDOM.render(reactElement, rootElement)
 
-
+     const helloEl = React.createElement('span', { children: 'Hello' })
+    const worldEl = React.createElement('span', { children: 'World' })
+    const spanElements = React.createElement('div', null ,  helloEl, ' ', worldEl)
+    ReactDOM.render(spanElements, rootElement)
   </script>
 </body>
