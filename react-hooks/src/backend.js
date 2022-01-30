@@ -3,7 +3,7 @@ import {graphql} from '@kentcdodds/react-workshop-app/server'
 const pokemonApi = graphql.link('https://graphql-pokemon2.vercel.app/')
 
 export const handlers = [
-  pokemonApi.query('PokemonInfo', (req, res, ctx) => {
+/*  pokemonApi.query('PokemonInfo', (req, res, ctx) => {
     const pokemon = allPokemon[req.variables.name.toLowerCase()]
     if (pokemon) {
       return res(ctx.status(200), ctx.data({pokemon}))
@@ -22,7 +22,7 @@ export const handlers = [
         }),
       )
     }
-  }),
+  }),*/
 ]
 
 const allPokemon = {
